@@ -19,8 +19,8 @@ import java.util.Iterator;
 import static com.badlogic.gdx.Gdx.app;
 
 public class GameScreen implements Screen {
-    public static final int VIEWPORT_WIDTH = 300;
-    public static final int VIEWPORT_HEIGHT = 168;
+    public static final int VIEWPORT_WIDTH = 800;
+    public static final int VIEWPORT_HEIGHT = 448;
     public static final int LIFES = 10;
     private final BitmapFont font;
     private final Texture cointImage1;
@@ -77,7 +77,7 @@ public class GameScreen implements Screen {
     private void spawnRaindrop() {
         Rectangle raindrop = new Rectangle();
         raindrop.y = MathUtils.random(0, VIEWPORT_WIDTH / 3);
-        raindrop.x = VIEWPORT_HEIGHT / cointImage1.getHeight();
+        raindrop.x = VIEWPORT_HEIGHT /6;
         raindrop.width = cointImage1.getWidth();
         raindrop.height = cointImage1.getHeight();
         raindrops.add(raindrop);
